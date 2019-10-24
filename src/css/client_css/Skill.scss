@@ -1,0 +1,49 @@
+@import '../_variables.scss';
+
+.skill {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: .15rem 0;
+    border-bottom: 1px solid rgba($color-gray,.75);
+
+    h3 {
+        flex: 1;
+        font-size: 1.75rem;
+        font-weight: 400;
+        padding-right: 1rem;
+        transition-duration: 1s;
+    }
+
+    .skill-meter {
+        flex: 3;
+        height: .625rem;
+        background-color: $color-gray;
+        border: 1px solid $color-green;
+        border-radius: 1rem;
+
+        .skill-level {
+            background-color: $color-ltblue2;
+            background-image: url("https://www.transparenttextures.com/patterns/crisp-paper-ruffles.png");
+            box-shadow: 0px 3px 1px rgba(0,0,0,.3);
+        }
+    }
+    
+    
+}
+
+@media (max-width: 525px) {
+    .skill {
+
+        h3 {
+            font-size: 1.35rem;
+        }
+
+        .skill-meter {
+            flex: 2;
+        }
+
+    }
+    
+}

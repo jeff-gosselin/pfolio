@@ -1,0 +1,70 @@
+@import '../_variables.scss';
+
+#bio {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to right, rgba(1,29,43,.95) 25%, rgba(75,115,115,.6)), url(../../img/ny_02.jpg);
+    background-size: cover;
+    background-position: top;
+
+    .bio-headline {
+        position: absolute;
+        display: flex;
+        align-items: flex-end;
+        height: 50vh;
+        // mix-blend-mode: hard-light;
+        z-index: 2200;
+        transform: translateX(-.75rem);
+        padding: 0 0 0 6rem;
+
+        h1 {
+            color: rgba($color-green, 1);
+            font-size: 14rem;
+            font-weight: 300;
+
+            span {
+                color: $color-blue;
+            }
+        }
+        
+    }
+
+    & > .stripe {
+        position: absolute;
+        height: .3rem;
+        width: 90vw;
+        top: 50%;
+        left: 0;
+        border-radius: 0 50px 50px 0;
+        
+        // transform: translateY(-50%);
+        background-color: rgba($color-blue,.2);
+        z-index: 1;
+    }
+
+    .bio-white-bkg {
+        background-color: $color-white;
+        width: 100vw;
+        height: 100vh;
+        clip-path: polygon(0 0, 100% 100%, 0 100%, 0 100%);
+        position: absolute;
+        z-index: 10;
+    
+        & > .stripe {
+            position: absolute;
+            height: .3rem;
+            width: 90vw;
+            top: 50%;
+            right: 0;
+            border-radius: 40px;
+            // transform: translateY(-50%);
+            background-color: rgba($color-gray,.325);
+            z-index: 1;
+        }
+    }
+
+}
+
+
+

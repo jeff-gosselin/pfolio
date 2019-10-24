@@ -1,0 +1,41 @@
+@import '../_variables.scss';
+
+#skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    z-index: 2200;
+    width: 55vw;
+    height: 50vh;
+    left: 0;
+    bottom: 0;
+    padding: 0 0 0 7vw;
+    color: $color-blue;
+
+    h2 {
+        font-size: 2.5rem;
+        color: $color-green;
+        // margin-left: -15%;
+        margin-bottom: 1.25rem;
+        font-weight: 400;
+        font-style: normal;
+        // opacity: .25;
+        margin-top: -2rem;
+
+        span {
+            color: $color-blue;
+        }
+
+    }
+    
+    p {
+        font-size: 2.25rem;
+        line-height: 2.75rem;
+        text-shadow: 1px 1px 4px rgba(0,0,0,.25);
+        font-family: adobe-caslon-pro,serif;
+        font-weight: 400;
+        font-style: normal;
+        // opacity: .95;
+    }
+}
